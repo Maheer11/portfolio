@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
@@ -21,19 +21,28 @@ body {
 
 .nav-bar {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
+    position: relative;
+    padding: 1rem;
     justify-content: space-between;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+
 }
+
 
 nav ul {
     display: none;
-    gap: 5px;
+    gap: 3px;
 
 }
 
+
+
+
 nav ul li {
-    list-style-type: none;
     display: inline-block;
     margin: 10px 20px;
 }
@@ -71,9 +80,10 @@ nav a:hover {
     transition: 0.5s ease-in;
 }
 
-.logo {
-    width: 200px;
-    font-size: 15px;
+.logo h1{
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(171, 165, 165);
 }
 
 .details {
@@ -140,15 +150,28 @@ nav a:hover {
     margin: 60px auto;
 }
 
-.about-text {
+
+.aboutmypo h1{
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+   
+    
+
+.aboutmypo p{
+    margin-top: auto;
     text-align: center;
     line-height: 1.6;
     padding: 20px;
+    margin-bottom: auto;
+    text-transform: none;
+    letter-spacing: 1.5px;
 }
 
-.about h2 {
-    font-size: 45px;
-}
 
 .about-wrks {
     width: 100%;
@@ -160,26 +183,22 @@ nav a:hover {
     gap: 80px;
 }
 
-.about-col-1{
-    flex-basis: 60%;
-}
 
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.aboutmypo{
+    margin: 30px;
+    padding: 0px;
     box-sizing: border-box;
-    font-family:'Poppins', sans-serif;
-    
-    
-
 }
 
 .about-container{
-    display: block;
-    width: 80%;
-    text-wrap:wrap ;
+width: 100%;
+min-height: 50vh;
+
 }
+
+    
+    
+
 
 .wrks {
     width: 200px;
@@ -248,7 +267,7 @@ nav a:hover {
 
 .skills-content p {
     margin-top: 10px;
-    color: #27ae60;
+    color: purple;
 }
 
 
@@ -289,19 +308,19 @@ textarea {
 
 input:focus-within {
      outline: none;
-     border-color: #27ae60;
+     border-color: purple;
      border-width: 3px;
 }
 
 textarea:focus-within {
     outline: none;
-    border-color: #27ae60;
+    border-color:purple;
     border-width: 3px;
 }
 
 button {
     width: 120px;
-    background: #27ae60;
+    background:purple;
     border: none;
     border-color: black;
     border-radius: 8px;
@@ -404,7 +423,7 @@ button {
 .about-text p {
     max-width: 90%;
     font-size: 20px;
-    display: flex;
+    display: flexbox;
     margin: auto;
 }
 
