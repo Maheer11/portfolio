@@ -151,7 +151,6 @@ body {
  .btn-blue-btn{
     background-color:#0a6069e9 ;
     font-size: 16px;
-    width:;
     justify-content: space-between;
     padding:1rem;
     text-align: center;
@@ -336,11 +335,21 @@ min-height: 50vh;
     text-align: center;
     line-height: 1.6;
     padding: 20px;
+
 }
 
-.skills h2 {
-    font-size: 45px;
+.skills-text a {
+    font-size: 35px;
+    font-weight: 600;
+    color: hsl(188, 71%, 13%);
+    text-decoration: none;
 }
+
+
+
+
+
+
 
 .skills-details {
     width: 100%;
@@ -389,6 +398,12 @@ min-height: 50vh;
     margin-bottom: 60px;
 }
 
+.form-text h1{
+    font-weight: 500;
+    font-size: 35px;
+    color: white;
+
+}
 input {
     background: rgb(5, 71, 87);
     width: 80%;
