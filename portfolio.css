@@ -7,7 +7,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif;
     color: white;
     border: none;
     outline: none;
@@ -17,14 +16,14 @@
 
 :root{
     --main-color: #052730;
-    --bg-color: #032c36;
+    --bg-color: hwb(189 16% 28%);
     --snd-bf-color: #0c0808;
     --text:black;
 
 }
 
 body {
-
+    font-family:"montserrat",serif;
     background: var(--bg-color);
     color: var(--text-color);
 }
@@ -54,12 +53,6 @@ body {
     margin: 0;
     justify-content: center;
     padding: 10px 30px;
-    padding-left: rem;
-
-
-
-
-
 }
 
 .navbar ul li{
@@ -93,14 +86,19 @@ body {
 
 .wrapper{
     padding-inline:10vw ;
+    width: 100%
 }
 
 /*--------Featured Box*/
 .featured-box{
-    position: relative;
+    position:relative;
     display: flex;
-    height: 100vh;
-    min-height: 700px;
+    height: 100%;
+    background:#023b49;
+    width: 100%;
+    margin-top:6rem ;
+    border-radius: 0.6rem;
+
 }
 
 
@@ -110,7 +108,6 @@ body {
     display: flex;
     justify-content: center;
     align-content:center;
-    min-height: 80vh;
     flex-direction: column;
     width: 50%;
     padding-left:20px;
@@ -153,14 +150,13 @@ body {
 }
  .btn-blue-btn{
     background-color:#0a6069e9 ;
-    font-size: 15px;
-    width: 30%;
+    font-size: 16px;
+    width:;
     justify-content: space-between;
-    padding-bottom: 1rem;
+    padding:1rem;
     text-align: center;
     margin-top: 8px;
     border-radius: 0.8rem;
-    padding-top: 10px;
     margin-right: 1.4rem;
 
     
@@ -174,7 +170,7 @@ body {
 .btn{
     padding: 10px 20px;
     width: auto;
-    background-color: #0a6069e9;
+    background-color: #1a9096;
     cursor: pointer;
     transition: .4s;
     text-decoration: none;
@@ -223,15 +219,16 @@ body {
     object-fit: contain;
     padding-left: 3.2rem;
     display: block;
-    margin-top: 12rem;
-    border-radius: 3rem;
+    margin-top: 10rem;
+    border-radius: 10rem;
 }
 
 img{
     width: 100%;
-    border-radius: 5rem;
+    border-radius: 1rem;
     padding-left:6rem;
     box-shadow: #1a9096; 
+    margin-bottom: 4.5rem;
     animation:imgFloat 7s ease-in-out infinite ; 
 }
 
