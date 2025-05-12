@@ -30,14 +30,13 @@ body {
 }
 a:link,a:visited{
     text-decoration: none;
-    background-color: #1a9096;
     border-radius: 10px;
-    
-    
+
 }
 a:hover,a:active{
     background-color:#05566a;
     border-radius: 10px;
+    text-transform: uppercase;
     
     
     
