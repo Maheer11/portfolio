@@ -26,13 +26,36 @@ body {
     font-family:"montserrat",serif;
     background: var(--bg-color);
     color: var(--text-color);
+    width:1200px;
 }
-
+/*HEADER SECTION*/
 .header{
     background-color: rgb(29, 50, 61);
     text-align: center;
-    padding: 7px;
+    padding: 30px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr;
+}
+.nav{
+    background-color: red;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.featured-box {
+    grid-column: 1/-1;
+    grid-row: 2/3;
     display: flex;
+    background: #023b49;
+    width: 100%;
+    border-radius: 0.6rem;
+    
 }
 
 .logo {
@@ -81,25 +104,8 @@ body {
     display: flex;
 }
 
-
-
-
-.wrapper{
-    padding-inline:10vw ;
-    width: 100%
-}
-
 /*--------Featured Box*/
-.featured-box{
-    position:relative;
-    display: flex;
-    height: 100%;
-    background:#023b49;
-    width: 100%;
-    margin-top:6rem ;
-    border-radius: 0.6rem;
 
-}
 
 
 /*--------Featured Box*/
@@ -293,10 +299,6 @@ min-height: 50vh;
 
 }
 
-    
-    
-
-
 .wrks {
     width: 200px;
     height: 200px;
@@ -458,7 +460,7 @@ textarea:focus-within {
 
 /* MEDIA QUERRIES */
 
-/* TABLET */
+/* TABLET 
 @media (min-width:768px) {
 
     .hamburger {
@@ -480,10 +482,10 @@ textarea:focus-within {
         flex-direction: row;
         flex-wrap: wrap;
     }
-}
+}*/
 
 
-/* LAPTOP SCREEN */
+/* LAPTOP SCREEN 
 
 @media (min-width: 1024px) {
 
@@ -548,6 +550,6 @@ textarea:focus-within {
 .form {
     margin-top: 100px;
 }
-} 
+} */
 
 
