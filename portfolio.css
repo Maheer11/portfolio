@@ -223,6 +223,42 @@ a:hover,a:active{
     
  }
 
+ /*--------PROJECT STYLING---------*/
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.project-text{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.project-text h1{
+    font-size: 40px;
+    font-weight: 500;
+    color: #05566a;
+}
+.project-text p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 10px;
+}
+.project-text span{
+    color: #05566a;
+    font-weight: 500;
+}
+.project-text span:hover{
+    color: #1a9096;
+    text-decoration: underline;
+}
+
+
+
  .btn-blue-btn:hover{
     background: rgb(163, 137, 21);
  }
