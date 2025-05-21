@@ -1,102 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
-    <link rel="stylesheet" href="portfolio.css"/>
-    <link rel="stylesheet" href="mediaqueries.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My portfolio</title>
+  <link rel="stylesheet" href="portfolio.css"/>
+  <link rel="stylesheet" href="mediaqueries.css"/>
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Maheer</div>
-        <div class="nav-links">
-            <ul class="navlist">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#Experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-    </div>                              
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Maheer</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>    
-                <span></span>      
-                <span></span>
-            </div>
-            <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#projects"onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#Experience"onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#contact"onclick="toggleMenu()">Contact</a></li>
-    
-
-            </div>
-        </div>
-    
-            
-    </nav>
-    <section id="profile">
-        <div class="section_pic-container">
-            <img src="profile.jpg" alt="Maheer's profile picture" class="profile-pic">    
-        </div>
-        <div class="section_text">
-            <p class="section_text_p1">Hello, I'm</p>
-            <h1 class="title">Maheer</h1>
-            <p class="section_text_p2">FullStack Developer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('maheer.pdf')">
-                    Download CV</button>
-                 <button class="btn btn-color-1" onclick="location.href=
-                 '#contact'">
-                 Contact Me
-                 </button>
-            </div>
-            <div id="social" img src="social.png" alt="My linked in Profile">
-            <img src="social.png" alt="My linked in Profile" 
+  <nav id="desktop-nav">
+    <div class="logo">Maheer</div>
+      <div class="nav-links">
+        <ul class="navlist">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>                              
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Maheer</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>    
+        <span></span>      
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#projects"onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#Experience"onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#contact"onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section_pic-container">
+      <img src="profile.jpg" alt="Maheer's profile picture" class="profile-pic">    
+    </div>
+    <div class="section_text">
+      <p class="section_text_p1">Hello, I'm</p>
+      <h1 class="title">Maheer</h1>
+      <p class="section_text_p2">FullStack Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('maheer.pdf')">Download CV</button>
+        <button class="btn btn-color-1" onclick="location" href="#">Contact Me </button>
+      </div>
+      <div id="social" img src="image/social.png" alt="My linked in Profile">
+        <img src="image/social.png" alt="My linked in Profile" 
             class="icon" onclick="location.href='https://www.linkedin.com/in/abdul-gafarmahmud/'"> 
-            <img src="github.png" alt="My github Profile"
+        <img src="image/github.png" alt="My github Profile"
             class="icon" onclick="location.href='https://github.com/Maheer11/'">
-            <img src="twitter.png" alt="My twitter Profile"
+        <img src="image/twitter.png" alt="My twitter Profile"
             class="icon" onclick="location.href='https://https://x.com/_mahirr'">
-            
+      </div>
+    </div>
+  </section>
+  <section class="about-section">
+    <div class="section-title">
+      <h1> About Me </h1>
+      <p> Get to Know More </p>
+    </div>
+    <img src="image/about.jpg" alt="`Author image" class="author-image">
+    <div class="about-info">
+      <h3 class="about-experience"> Experience</h3>
+      <p> 2+ years of experience in web development, specializing in front-end and back-end technologies.</p>
+      <h4 class="about-education"> Education</h4>
+      <p> Bachelor's degree in Computer Science from Kwara State University.</p>
+    </div>
+  </section>
     
-ß
-            </div>
-        </div>
-
-    </section>
-    <section id="about">
-        <p class="about_text_p1"> Get to know more</p>
-        <h1 class="title">About Me</h1>
-        <div class="about-containers">
-            <div class="about-pic-container">
-                <img src="about.jpg" alt="About Me"
-                 class="about-pic">
-            </div>
-            <div class="about-details-container" >
-                <div class="about-containers">
-                    <div class="details-container">
-                      <img src="experience.png" alt="Experience Icon" 
-                      class="icon"/>
-                      <h3> Experience</h3>
-                        <p> 2+ years of experience in web development,
-                            specializing in front-end and back-end technologies.</p>
-
-                     </div>
-                        <div class="details-container">
-                            <img src="education.png" alt="Education Icon" 
-                            class="icon"/>
-                            <h3> Education</h3>
-                            <p> Bachelor's degree in Computer Science from Kwara State University.</p>
-               </div>  
-            </div>
-        </div>
-    </section>
-    
-    <script src="portfolio.js"></script>
+  <script src="portfolio.js"></script>
 </body>
 </html>
