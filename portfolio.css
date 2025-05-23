@@ -284,6 +284,7 @@ border: olive;
   grid-column: 1/-1;
   justify-items: center;
   align-items: center;
+  border-color: black;
 }
 .author-image{
   grid-column: 3/4;
@@ -293,7 +294,25 @@ border: olive;
   grid-row: 2/3;
 }
 
+.about-info h4{
+  margin-left: 20rem;
+  margin-top: -3.5rem;
+  font-size: 1.17rem;
+  }
+
+.edu{
+  display: grid;
+  grid-template-columns: 150px 2fr;
+  gap: 1rem;
+  align-items: center;
+  margin-left: 20rem;
+  margin-bottom: 4rem;
+}
 
 
+.about-exp{
+  border:  solid black;
+  border-radius: 4rem;
 
+}
 
