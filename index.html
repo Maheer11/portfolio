@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -12,14 +12,14 @@
     <div class="logo">Maheer</div>
       <div class="nav-links">
         <ul class="navlist">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#Experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="SkillSet.html">SkillSet</a></li>
+          <li><a href="#contact.html">Contact</a></li>
         </ul>
       </div>                              
   </nav>
-  <nav id="hamburger-nav">
+  <!--<nav id="hamburger-nav">
     <div class="logo">Maheer</div>
     <div class="hamburger-menu">
       <div class="hamburger-icon" onclick="toggleMenu()">
@@ -34,7 +34,7 @@
         <li><a href="#contact"onclick="toggleMenu()">Contact</a></li>
       </div>
     </div>
-  </nav>
+  </nav> -->
   <section id="profile">
     <div class="section_pic-container">
       <img src="./images/profile.jpg" alt="Maheer's profile picture" class="profile-pic">    
@@ -58,35 +58,95 @@
     </div>
   </section>
   <section class="about-section">
-    <div class="section-title">
+    <div class="about-header">
       <h1> About Me </h1>
       <p> Get to Know More </p>
     </div>
-    <img src="./images/about.jpg" alt="`Author image" class="author-image">
-    <div class="about-info">
-      <div class="box">
-      <div class="about-exp abox">
+    <img src=""  class="author-image">
+    <div class="about-content">
+      <div class="about-text">
+      <div class="info-cards">
         <h3>Experience</h3>
-        <p class="exp"> 2+ years</p>
-        <p>Front-End Development</p>
+        <p> 2+ years<br>FullStack Development</p>
       </div>
-      <div class="about-edu abox">
+      <div class="info-cards">
           <h4>Education</h4>
-          <p class="edu"> Bachelor's degree Computer Science</p>
-     </div>
-     </div>
-        <p class="about-insight">
+          <p> Bachelor's degree <br> Computer Science</p>
+        
+          
+      </div>
+
+      <img src="./images/about.jpg" alt="About author-image" class="author">
+
+  
+    </div>
+      <div id="about-description">
+          <p >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus delectus, consectetur nihil distinctio veniam eos commodi tempora dignissimos illo esse ut! Id fugit quisquam soluta blanditiis illum ab quae numquam?
         </p>
+      </div>
     </div>
-    <img src="./images/arrow.png" alt="arrow" class="icon" onclick="location.href='#projects'">
+    <img src="./images/arrow.png" alt="arrow" class="arrow-icon" onclick="location.href='#projects'">
   </section>
     
-  <section>
-    <p class="Experience">
-
-    </p>
+  <section class="experience-section">
+    <!--<p class="experience-section"> Explore My</p> -->
+    <h3 class="section-header"> SkillSet</h3>
+    <div class="exp-box">
+    <div class="setexp">
+       <h4 class="box-heading"> FrontEnd Development</h4>
+        <ul>
+          <li> <img src="/images/check-mark.png" alt=""><span>HTML</span></li>
+          <li> <img src="/images/check-mark.png" alt=""><span>CSS</span></li>
+          <li> <img src="/images/check-mark.png" alt=""><span>Javascript</span></li>
+          <li> <img src="/images/check-mark.png" alt=""><span>React</span></li>
+          <li> <img src="/images/check-mark.png" alt=""><span>Vite + React</span></li>
+          <li><img src="/images/check-mark.png" alt=""><span>WordPress</span></li>
+        </ul>
+    </div>
+    <div class="setexp">
+       <h4 class="box-heading"> BackEnd Development</h4>
+        <ul>
+          <li> <img src="/images/check-mark.png" alt="">Node js</li>
+          <li> <img src="/images/check-mark.png" alt="">Mongo Db</li>
+          <li> <img src="/images/check-mark.png" alt="">Mysql</li>
+          <li> <img src="/images/check-mark.png" alt="">REST</li>
+          <li><img src="/images/check-mark.png" alt="">Redis</li>
+          <li> <img src="/images/check-mark.png" alt="">Postman</li>
+        </ul>
+    </div>
+    </div>
+    
   </section>
+
+  <section class="project">
+    <div class="project-section-head">
+    <p> Browse my Recent Projects</p>
+    <h1 class="project-head">Projects</h1>
+    </div>
+    <div class="">
+      <div class="project-box">
+        <img src="./images/project1.jpg" alt="Project 1" class="project-image">
+        <h3 class="project-title">Food Delivery App</h3>
+        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+        <button class="btn btn-color-1" onclick="location" href=""></button>
+     </div>
+
+     <div class="">
+        <img src="./images/project1.jpg" alt="Project 1" class="project-image">
+        <h3 class="project-title">Nalot Website</h3>
+        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+        <button class="btn btn-color-1" onclick="location" href=""></button> 
+      </div>
+      <div class="">
+        <img src="./images/project1.jpg" alt="Project 1" class="project-image">
+        <h3 class="project-title">Web Portfolio</h3>
+        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+        <button class="btn btn-color-1" onclick="location" href=""></button>
+      </div>
+  </section>
+
+  
   <script src="portfolio.js"></script>
 </body>
 </html>
