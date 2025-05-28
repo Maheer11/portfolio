@@ -7,20 +7,22 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     
     
 }
 
 body{
     font-family: 'Poppins', sans-serif;
-    ;
-    width: 1200px;
-    
+    margin: 0;
+    padding: 0;
 }
 
 html{
     scroll-behavior: smooth;
     }
+
+    
 
 p{
     color: rgb(85, 85, 85);
@@ -33,9 +35,20 @@ a,
 } 
 
 /*DESKTOP NAVIGATION*/
-nav,
+nav{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: end;
+    width: auto;
+    position: sticky;
+}
 .nav-links {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
     
      
     } 
@@ -43,21 +56,17 @@ nav,
 .navlist li a{
     font-size: 1.2rem;
     padding: 0 20px; 
+
     ;
     
 }
 
    .navlist li{
     display: inline-block;
-    margin-left: 4rem;
+    margin-left: 6rem;
     
     }
 
-nav{
-    width: 1200px;
-    align-items: center;
-    
-}
 
 a{
     text-decoration: none;
@@ -89,13 +98,17 @@ a:hover{
 /*HAMBURGER MENU
 #hamburger-nav{
     display: none;
-    max-width: 800px;
-
+    justify-content: space-between;
+    align-items: center;
 }
+
+
+
 .hamburger-menu{
-    position: relative;
-    display: inline-block;
-    margin-left: 20rem;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    
     
 }
 
@@ -163,8 +176,9 @@ a:hover{
     opacity:1;
 }
 .hamburger-icon span:first-child{
-    transform:none;
-}
+    transform:none; 
+} */
+
 /*SECTIONS*/
 .profile-pic{
     width: 450x;
@@ -173,8 +187,7 @@ a:hover{
 }
 
 section{
-    padding-top: 4vh;
-    height:96vh;
+    padding: 3rem;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height:fit-content;
@@ -186,10 +199,10 @@ section{
 
  /*PROFILE SECTION*/
  #profile{
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    height:80vh;
+    align-items: center;
+    gap: 8rem;
+    max-width: 100%;
+    
  }
 
  .section_pic-container{
@@ -207,6 +220,7 @@ section{
 
  .section_text p{
     font-weight: 600;
+
  }
 
 .section_text p1{
@@ -275,62 +289,143 @@ border: olive;
 /****************/
 /*ABOUT SECTION*/
 
-.about-section { 
+.about-section {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 8.2rem 1fr;
-    gap:2rem;
+    margin-top: 150px;
+    
 }
-.section-title{
-  grid-column: 1/-1;
-  justify-items: center;
-  align-items: center;
-  border-color: black;
-}
-.author-image{
-  grid-column: 3/4;
-  height: 300px;
-  border-radius: 2rem;
-}
-.about-info{
-  grid-column: 1/3;
-  grid-row: 2/3;
-  display: grid;
-  
+.about-section #about-description{
+    padding-top: 20rem;
+    width: 70%;
+
 }
 
+.about-header{
+    text-align: center;
+    margin-top: 15px;
+}
 
-/*.about-info h4{
-  margin-left: 20rem;
-  margin-top: -3.5rem;
-  font-size: 1.17rem;
-  } */
-.box{
-    grid-row: 1/2;
+.about-text{
+    position:absolute;
     display: flex;
-    gap:20px;
-    margin-bottom:10px;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.abox{
-    width: 40%;
-  padding:20px;
-  border:  solid black;
-  border-radius: 2rem;
-
-}
-.about-edu{
- 
-
-}
-.about-exp{
+    justify-content: space-between;
+    margin:5rem 5rem 5rem 5rem ;
     
 }
 
-.about-insight{
-    grid-row: 2/3;
+.info-cards h3{
+ justify-content: center;
+ display: flex;
+ margin-right: 10rem;
+ font-size: 18px;
+
+}
+.info-cards p{
+    margin-right: 10rem;
+    border:1px solid rgb(14, 13, 13);
+    padding: 35px;
+    border-radius: 3rem;
+}
+.card {
+    border: 10px solid rgb(14, 13, 13);
+    padding: 35px;  
+    border-radius: 3rem;
+
 }
 
+.info-cards h4{
+    border: #000;
+    justify-content: center;
+    display: flex;
+    margin-right: 10rem;
+    font-size: 18px;
+
+}
+
+
+
+.arrow-icon{
+    margin-top: 15rem;
+    
+}
+
+.author{
+    width: 250px;
+    border-radius: 10rem;
+}
+
+/* EXPERIENCE SECTION */
+
+.experience-section {
+    display: grid;
+}
+
+.section-header{
+    justify-self: center;
+    grid-row:1/2;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.exp-box{
+    grid-row: 2/3;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.setexp{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 1.5rem 2rem;
+    border-radius: 3rem;
+
+}
+
+.setexp h4{
+    margin: 0 auto;
+    padding: 1rem;
+}
+.setexp ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.5rem;
+}
+.setexp li{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+ }
+
+ 
+.contrnt{
+    min-width: fit-content;
+}
+
+/*PROJECT*/
+.project{
+    display: grid;
+}
+
+.project-head{
+    justify-self: center;
+    grid-row:1/2;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.project p{
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.project-box{
+    grid-column: 2/3;
+    display: grid;
+    gap: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
