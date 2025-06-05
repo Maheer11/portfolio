@@ -43,7 +43,7 @@ nav{
     padding: 1rem;
     align-items: end;
     width: 100%;
-    position: sticky;
+
 }
 .nav-links {
     display: flex;
@@ -187,22 +187,17 @@ a:hover{
     border-radius: 50%;
 }
 
-section{
-    padding: 3rem;
-    margin: 0 10rem;
-    box-sizing: border-box;
-    min-height:fit-content;
-    display: flex;
-}
- .section-container{
-    display: flex;
- }
+
+ 
 
  /*PROFILE SECTION*/
  #profile{
     align-items: center;
     gap: 8rem;
     max-width: 100%;
+    display:flex;
+    margin: 5rem;
+    padding: 5rem;
     
  }
 
@@ -210,12 +205,13 @@ section{
     display: flex;
     height: 400px;
     width: 400px;
-    margin: auto 0;
+    margin-right: 8rem;
  }
 
  .section_text{
     align-self: center;
     text-align: center;
+    margin-bottom: 5rem;
 
  }
 
@@ -257,7 +253,7 @@ section{
 .btn{
     font-weight: 600;
     transition: all 300ms ease;
-    padding:1rem;
+    padding:12px;
     width: 8rem;
     border-radius: 2rem;
 }
@@ -276,8 +272,17 @@ border: olive;
 }
 
 .btn-color-2{
-    background:none
+    background:none;
+    display: grid;
+    margin: 25px;
+}
 
+.btn-color-1{
+background: liner linear-gradient(135deg, #4f46e5, #3b82f6);
+color: #696a55;
+position: relative;
+overflow: hidden;
+margin: 25px;
 }
 .btn-color-2:hover{
     border: rgb(9, 8, 8);
@@ -295,58 +300,87 @@ border: olive;
 /****************/
 /*ABOUT SECTION*/
 
+.about-image{
+    width: 300px;
+    height: 350px;
+    border-radius: 3rem;
+    border-style:groove;
+}
+
 .about-section {
-    display: grid;
-    margin-top: 150px;
-    
-}
-.about-section #about-description{
-    padding-top: 20rem;
-    width: 70%;
-
+    padding: 3rem 2rem;
+    background-color: #f9f9f9;
 }
 
-.about-header{
+.about-image{
+    width: 300px;
+    height: 500px;
+    border-radius: 2.5rem;
+    object-fit: cover;
+}
+
+
+.about-title{
     text-align: center;
-    margin-top: 15px;
+    margin-bottom: 0.2rem;
+    font-size: 2rem;
 }
 
-.about-text{
-    position:absolute;
+.about-title span{
+    color: #4e4e4e;
+}
+
+.subtext{
+    text-align: center;
+    color: #777;
+    margin-bottom: 2rem;
+}
+.about-content{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:2rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.left-side{
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.right-side{
+    flex: 2;
+    min-width: 250px;
+}
+.about-text{
+    display: flex;
     margin:5rem 5rem 5rem 5rem ;
     
 }
-
-.info-cards h3{
- justify-content: center;
- display: flex;
- margin-right: 10rem;
- font-size: 18px;
-
-}
-.info-cards p{
-    margin-right: 10rem;
-    border:1px solid rgb(14, 13, 13);
-    padding: 35px;
-    border-radius: 3rem;
-}
-.card {
-    border: 10px solid rgb(14, 13, 13);
-    padding: 35px;  
-    border-radius: 3rem;
-
+.info-cards{
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 350px;
+    background-color:#fff;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
 
-.info-cards h4{
-    border: #000;
-    justify-content: center;
+.about-description{
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+}
+.info-boxes{
     display: flex;
-    margin-right: 10rem;
-    font-size: 18px;
-
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
+
 
 
 
@@ -355,10 +389,6 @@ border: olive;
     
 }
 
-.author{
-    width: 250px;
-    border-radius: 10rem;
-}
 
 /* EXPERIENCE SECTION */
 
@@ -434,6 +464,8 @@ border: olive;
     padding: 10px;
     margin: 10px;
     max-width: 100%;
+    background-color: rgb(224, 224, 224);
+    border-radius: 2rem;
 }
 
 .procard{
@@ -444,40 +476,35 @@ border: olive;
     grid-template-columns:1fr 1fr 1fr;
 }
  .procards{
-    display: flex;
     margin: 30px;
     padding: 30px;
     border:1px solid rgb(14, 13, 13);
-    border-radius: 2rem;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
     
 
 
  }
 
  .card-body{
-   display: flex;
+   display: grid;
    margin: 5px;
    padding: 5px;
 
  }
  .card-body img{
     width: 400px;
-    height: 300px;
-    border-radius: 1rem;
-    margin-top: 4rem;
-    
-
+    height: 250px;
+    border-radius: 0.5rem;
+    margin-top: 3rem;
  }
 
  .card-image{
     display: flex;
-    flex-direction: column;
-    
  }
 
- .card-body h2{
-    display: flex;
-    box-sizing: inherit;
+ .card-body h4{
+    
  }
 
  #span{
