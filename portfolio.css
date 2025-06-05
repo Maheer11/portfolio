@@ -323,7 +323,7 @@ margin: 25px;
 .about-title{
     text-align: center;
     margin-bottom: 0.2rem;
-    font-size: 2rem;
+    font-size: 50px;
 }
 
 .about-title span{
@@ -400,7 +400,7 @@ margin: 25px;
 .section-header{
     justify-self: center;
     grid-row:1/2;
-    font-size: 2rem;
+    font-size: 45px;
     padding: 2rem;
 }
 
@@ -454,6 +454,7 @@ margin: 25px;
 .project-section-head h1{
     text-align: center;
     margin-top: 2rem;
+    font-size: 45px;
 }
  .project-section-head p{
     text-align: center;
