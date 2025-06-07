@@ -327,6 +327,7 @@ margin: 25px;
     text-align: center;
     margin-bottom: 0.2rem;
     font-size: 50px;
+    font-weight: 500;
 }
 
 .about-title span{
@@ -404,6 +405,7 @@ margin: 25px;
     justify-self: center;
     grid-row:1/2;
     font-size: 45px;
+    font-weight: 500;
     padding: 2rem;
 }
 
@@ -458,7 +460,7 @@ margin: 25px;
     text-align: center;
     margin-top: 2rem;
     font-size: 45px;
-    font-weight: 400;
+    font-weight: 500;
 }
  .project-section-head p{
     text-align: center;
@@ -508,9 +510,6 @@ margin: 25px;
     display: flex;
  }
 
- .card-body h4{
-    
- }
 
  #span{
     font-size: x-small;
