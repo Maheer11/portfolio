@@ -38,28 +38,19 @@ a,
 /*DESKTOP NAVIGATION*/
 nav{
     display: flex;
-    flex-wrap: nowrap;
-    gap: 1rem;
+    justify-content:space-around;
     padding: 1rem;
-    align-items: end;
     width: 100%;
-
 }
+
 .nav-links {
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-end;
     align-items: center;
-    flex-wrap: nowrap;
-    
-     
-    } 
+} 
 
 .navlist li a{
     font-size: 1.2rem;
-    padding: 0 20px; 
-
-    ;
-    
 }
 
    .navlist li{
@@ -205,7 +196,7 @@ a:hover{
     display: flex;
     height: 400px;
     width: 400px;
-    margin-right: 8rem;
+    margin-left: 10rem;
  }
 
  .section_text{
@@ -291,6 +282,18 @@ margin: 25px;
 .btn-container{
     gap: 1rem;
 }
+
+.btn-color-3{
+background: liner linear-gradient(135deg, #4f46e5, #3b82f6);
+color: #000000;
+position: relative;
+overflow: hidden;
+margin: 25px;  
+}
+ .btn-color-3:hover{
+    border: rgb(9, 8, 8);
+    background: rgb(72, 72, 71);
+ }
 
 /*BOX*/
 .box-heading{
@@ -455,6 +458,7 @@ margin: 25px;
     text-align: center;
     margin-top: 2rem;
     font-size: 45px;
+    font-weight: 400;
 }
  .project-section-head p{
     text-align: center;
@@ -510,4 +514,9 @@ margin: 25px;
 
  #span{
     font-size: x-small;
+ }
+
+ .probtn{
+    display: flex;
+
  }
