@@ -471,7 +471,7 @@ margin: 25px;
     padding: 10px;
     margin: 10px;
     max-width: 100%;
-    background-color: rgb(224, 224, 224);
+    background-color:#f8ebd840;
     border-radius: 2rem;
 }
 
@@ -518,4 +518,8 @@ margin: 25px;
  .probtn{
     display: flex;
 
+ }
+ 
+ .procards h3{
+    text-align: center;
  }
